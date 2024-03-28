@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<resources>-->
+<!--    <style name="Theme." parent="Theme.MaterialComponents.NoActionBar" />-->
+<!--</resources>-->
+
+<resources>
+<!-- Base application theme. -->
+<style name="Theme.TuitionProject" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <!-- Primary brand color. -->
+    <item name="colorPrimary">@color/lavender</item>
+    <item name="colorPrimaryVariant">@color/lavender</item>
+    <item name="colorOnPrimary">@color/white</item>
+    <!-- Secondary brand color. -->
+    <item name="colorSecondary">@color/primaryColor</item>
+    <item name="colorSecondaryVariant">@color/secondaryColor</item>
+    <item name="colorOnSecondary">@color/black</item>
+    <!-- Status bar color. -->
+    <item name="android:statusBarColor" >@color/secondaryColor</item>
+</style>
+
+    <style name="my_dialog_theme" parent="ThemeOverlay.AppCompat.Dialog">
+        <item name="colorAccent">@color/secondaryColor</item> <!--header background-->
+        <item name="android:windowBackground">@color/white</item> <!--calendar background-->
+        <item name="android:colorControlActivated">@color/lavender</item> <!--selected day-->
+        <item name="android:textColorPrimary">@color/black</item> <!--days of the month-->
+        <item name="android:textColorSecondary">@color/black</item> <!--days of the week-->
+    </style>
+
+</resources>

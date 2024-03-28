@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "246760834074",
+    "firebase_url": "https://idararauzat-ul-ashraf-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "idararauzat-ul-ashraf",
+    "storage_bucket": "idararauzat-ul-ashraf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246760834074:android:0c997580fb1fd7b9a33da3",
+        "android_client_info": {
+          "package_name": "com.example.tuitionproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8Tq_nIIyubTK54n0REZTmrA9BuP3DxzM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

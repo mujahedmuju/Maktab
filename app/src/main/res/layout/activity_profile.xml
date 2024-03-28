@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/appBar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:gravity="left"-->
+    <!--        android:orientation="horizontal">-->
+
+    <!--        <carbon.widget.ImageView-->
+    <!--            android:id="@+id/closeBtn"-->
+    <!--            android:layout_width="@dimen/_40sdp"-->
+    <!--            android:layout_height="@dimen/_40sdp"-->
+    <!--            android:layout_marginTop="@dimen/_5sdp"-->
+    <!--            android:layout_marginStart="@dimen/_15sdp"-->
+    <!--            android:background="@color/backgroundColor"-->
+    <!--            android:padding="8dp"-->
+    <!--            android:src="@drawable/baseline_close_24"-->
+    <!--            app:carbon_cornerRadius="@dimen/_15sdp" />-->
+
+    <!--        <com.google.android.material.textfield.TextInputLayout-->
+    <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginLeft="@dimen/_15sdp"-->
+    <!--            android:layout_marginRight="@dimen/_15sdp"-->
+    <!--            android:hint="Mobile Number"-->
+    <!--            app:counterEnabled="true"-->
+    <!--            app:counterMaxLength="10"-->
+    <!--            app:placeholderText="Enter Mobile Number">-->
+
+    <!--            <com.google.android.material.textfield.TextInputEditText-->
+    <!--                android:id="@+id/mobileNoEdtTxt"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:fontFamily="@font/manrope_medium"-->
+    <!--                android:inputType="phone"-->
+    <!--                android:maxLines="1"-->
+    <!--                android:maxLength="10"-->
+    <!--                android:textColor="@color/secondaryColor"-->
+    <!--                android:textSize="@dimen/sub_head_textSize" />-->
+    <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+    <!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/secondaryColor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <carbon.widget.ImageView
+            android:id="@+id/closeBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="3dp"
+            android:padding="8dp"
+            android:src="@drawable/baseline_close_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/manrope_semibold"
+            android:paddingStart="5dp"
+            android:text="Our Profile"
+            android:textColor="@color/white"
+            android:textSize="@dimen/heading_textSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <carbon.widget.ImageView
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:background="@color/carbon_red_400"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="@dimen/_20sdp"
+            app:carbon_cornerRadius="@dimen/_60sdp" />
+
+        <carbon.widget.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/carbon_red_50"
+            android:fontFamily="@font/manrope_bold"
+            android:gravity="center"
+            android:padding="@dimen/_7sdp"
+            android:text="Mohammed Abdul Lateef Ghouri"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <carbon.widget.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/carbon_blue_50"
+            android:fontFamily="@font/manrope_bold"
+            android:gravity="center"
+            android:padding="@dimen/_7sdp"
+            android:text="Idara Rauzat Ul Ashraf"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <carbon.widget.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/carbon_orange_50"
+            android:fontFamily="@font/manrope_bold"
+            android:gravity="center"
+            android:padding="@dimen/_7sdp"
+            android:text="+918919133812"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <carbon.widget.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/carbon_teal_50"
+            android:fontFamily="@font/manrope_bold"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="NRR Puram Colony, Site -3, Borabanda, Hyderabad"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+
+        <carbon.widget.Button
+            android:id="@+id/shareBtn"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:background="@color/secondaryColor"
+            android:fontFamily="@font/manrope_semibold"
+            android:gravity="center"
+            android:text="Share"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:carbon_cornerRadius="@dimen/_8sdp" />
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

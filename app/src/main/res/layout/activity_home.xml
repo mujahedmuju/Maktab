@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <carbon.widget.LinearLayout
+        android:id="@+id/stdDetailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:background="@color/white"
+        app:carbon_cornerRadius="15dp"
+        android:elevation="8dp"
+        app:carbon_elevationShadowColor="@color/carbon_red_900">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp">
+            <carbon.widget.ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/baseline_supervisor_account_24"
+                android:background="@color/secondaryColor"
+                app:carbon_cornerRadius="10dp"/>
+            <TextView
+                android:id="@+id/totalStudentTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/manrope_medium"
+                android:text="@string/num_char"
+                android:textColor="@color/secondaryColor"
+                android:textSize="@dimen/_14sdp"
+                android:layout_marginStart="@dimen/_12sdp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_bold"
+            android:text="@string/student_details"
+            android:textColor="@color/secondaryColor"
+            android:textSize="30sp"
+            android:layout_margin="15dp"/>
+
+    </carbon.widget.LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/stdDetailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_12sdp"
+        android:gravity="center_vertical">
+        <carbon.widget.TextView
+            android:id="@+id/upcomingPayBtn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_weight="0.5"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@color/white"
+            android:fontFamily="@font/manrope_bold"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="Upcoming Payments"
+            android:textColor="@color/carbon_blue_700"
+            android:textSize="@dimen/_16sdp"
+            app:carbon_cornerRadius="@dimen/_10sdp" />
+        <carbon.widget.TextView
+            android:id="@+id/profileBtn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_weight="0.5"
+            android:background="@color/white"
+            android:fontFamily="@font/manrope_bold"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="Our Profile"
+            android:textColor="@color/carbon_teal_700"
+            android:textSize="@dimen/_16sdp"
+            app:carbon_cornerRadius="@dimen/_10sdp" />
+
+
+    </LinearLayout>
+
+
+<!--    <carbon.widget.ImageView-->
+<!--        android:id="@+id/signOutBtn"-->
+<!--        android:layout_width="56dp"-->
+<!--        android:layout_height="56dp"-->
+<!--        android:layout_margin="15dp"-->
+<!--        app:carbon_cornerRadius="14dp"-->
+<!--        android:background="@color/white"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:src="@drawable/delete"-->
+<!--        android:padding="10dp"-->
+<!--        android:elevation="8dp" />-->
+
+
+
+</RelativeLayout>

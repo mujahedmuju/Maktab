@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_14sdp"
+    android:ellipsize="end"
+    android:fontFamily="@font/manrope_medium"
+    android:inputType="none"
+    android:maxLines="1"
+    android:textColor="@color/secondaryColor"
+    android:textSize="@dimen/_14sdp"/>

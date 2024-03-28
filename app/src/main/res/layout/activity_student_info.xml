@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context=".StudentInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/secondaryColor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <carbon.widget.ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="3dp"
+            android:padding="8dp"
+            android:src="@drawable/back"
+            app:carbon_tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/manrope_semibold"
+            android:paddingStart="5dp"
+            android:text="Student Profile"
+            android:textColor="@color/white"
+            android:textSize="@dimen/heading_textSize" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+<!--            <carbon.widget.LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="320dp"-->
+<!--                android:background="@color/white"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical"-->
+<!--                app:carbon_cornerRadiusBottomEnd="50dp"-->
+<!--                app:carbon_cornerRadiusBottomStart="50dp"-->
+<!--                app:carbon_elevation="6dp">-->
+
+<!--                <carbon.widget.ImageView-->
+<!--                    android:id="@+id/profilePhoto"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:layout_marginBottom="15dp"-->
+<!--                    android:background="@color/backgroundColor"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/client"-->
+<!--                    app:carbon_cornerRadius="50dp"-->
+<!--                    app:carbon_elevation="8dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/nameTv"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/manrope_semibold"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Mohammed Mujahed"-->
+<!--                    android:textColor="@color/secondaryColor"-->
+<!--                    android:textSize="@dimen/heading_textSize" />-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <carbon.widget.ImageView-->
+<!--                        android:layout_width="45dp"-->
+<!--                        android:layout_height="45dp"-->
+<!--                        android:layout_marginEnd="15dp"-->
+<!--                        android:padding="3dp"-->
+<!--                        android:src="@drawable/telephone" />-->
+
+<!--                    <carbon.widget.ImageView-->
+<!--                        android:layout_width="45dp"-->
+<!--                        android:layout_height="45dp"-->
+<!--                        android:layout_marginEnd="15dp"-->
+<!--                        android:padding="3dp"-->
+<!--                        android:src="@drawable/whatsapp" />-->
+
+<!--                    <carbon.widget.ImageView-->
+<!--                        android:layout_width="45dp"-->
+<!--                        android:layout_height="45dp"-->
+<!--                        android:padding="3dp"-->
+<!--                        android:src="@drawable/edit" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                <carbon.widget.LinearLayout-->
+<!--                    android:id="@+id/paymentDetailsBtn"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="45dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:layout_marginBottom="5dp"-->
+<!--                    android:background="@color/secondaryColor"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:paddingStart="15dp"-->
+<!--                    android:paddingEnd="15dp"-->
+<!--                    app:carbon_cornerRadius="10dp">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_marginStart="10dp"-->
+<!--                        android:layout_marginEnd="10dp"-->
+<!--                        android:fontFamily="@font/manrope_semibold"-->
+<!--                        android:text="Payments"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="@dimen/sb_head_textSize" />-->
+
+<!--                    <carbon.widget.ImageView-->
+<!--                        android:layout_width="35dp"-->
+<!--                        android:layout_height="35dp"-->
+<!--                        android:padding="6dp"-->
+<!--                        android:src="@drawable/payment"-->
+<!--                        app:carbon_tint="@color/white" />-->
+
+<!--                </carbon.widget.LinearLayout>-->
+<!--                -->
+<!--            </carbon.widget.LinearLayout>-->
+
+            <carbon.widget.LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_20sdp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:carbon_elevation="@dimen/_3sdp"
+                app:carbon_cornerRadius="@dimen/_12sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="top"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/manrope_medium"
+                        android:text="Name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sb_head_textSize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/manrope_bold"
+                        android:text=":"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/heading_textSize" />
+
+                    <TextView
+                        android:id="@+id/nameTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/manrope_bold"
+                        android:text="Mohammed Mujahed"
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="@dimen/sb_head_textSize"
+                        android:paddingBottom="@dimen/_2sdp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="top"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/manrope_medium"
+                        android:text="Guardian"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sb_head_textSize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/manrope_bold"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/heading_textSize" />
+
+                    <TextView
+                        android:id="@+id/fatherNameTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/manrope_semibold"
+                        android:text="Mohammed Moiz Uddin "
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="@dimen/sb_head_textSize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="top"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/manrope_medium"
+                        android:text="D.O.B"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sb_head_textSize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/manrope_bold"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/heading_textSize" />
+
+                    <TextView
+                        android:id="@+id/dobTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/manrope_semibold"
+                        android:text="21 Jan 2000"
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="@dimen/sb_head_textSize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="top"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/manrope_medium"
+                        android:text="Mobile No"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sb_head_textSize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/manrope_bold"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/heading_textSize" />
+
+                    <TextView
+                        android:id="@+id/mobileNoTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/manrope_semibold"
+                        android:text="9542970430"
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="@dimen/sb_head_textSize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="top"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/manrope_medium"
+                        android:text="Course"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sb_head_textSize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/manrope_bold"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/heading_textSize" />
+
+                    <TextView
+                        android:id="@+id/courseTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/manrope_semibold"
+                        android:text="Quida + Deeniyat"
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="@dimen/sb_head_textSize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="top"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/manrope_medium"
+                        android:text="Timings"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sb_head_textSize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/manrope_bold"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/heading_textSize" />
+
+                    <TextView
+                        android:id="@+id/timeTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/manrope_semibold"
+                        android:text="5:30 - 7:00 pm"
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="@dimen/sb_head_textSize" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="top"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/manrope_medium"
+                        android:text="Admit Date"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sb_head_textSize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/manrope_bold"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/heading_textSize" />
+
+                    <TextView
+                        android:id="@+id/dojTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/manrope_bold"
+                        android:text="12/Jan/2024"
+                        android:textColor="#4E5BC6"
+                        android:textSize="@dimen/sb_head_textSize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="top"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/manrope_medium"
+                        android:text="Address"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sb_head_textSize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/manrope_bold"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/heading_textSize" />
+
+                    <TextView
+                        android:id="@+id/addressTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/manrope_semibold"
+                        android:text="@string/address"
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="@dimen/sb_head_textSize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <carbon.widget.ImageView
+                        android:id="@+id/callBtn"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:padding="3dp"
+                        android:src="@drawable/telephone"/>
+
+                    <carbon.widget.ImageView
+                        android:id="@+id/whatsappBtn"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:padding="3dp"
+                        android:src="@drawable/whatsapp"/>
+
+                    <carbon.widget.ImageView
+                        android:id="@+id/editProfileBtn"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:padding="3dp"
+                        android:src="@drawable/edit"/>
+
+                </LinearLayout>
+
+                <carbon.widget.LinearLayout
+                    android:id="@+id/paymentDetailsBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_15sdp"
+                    android:background="@color/secondaryColor"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    app:carbon_cornerRadius="10dp"
+                    app:carbon_elevation="@dimen/_2sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:fontFamily="@font/manrope_semibold"
+                        android:text="Payments"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sb_head_textSize" />
+
+                    <carbon.widget.ImageView
+                        android:layout_width="@dimen/_32sdp"
+                        android:layout_height="@dimen/_32sdp"
+                        android:padding="@dimen/_4sdp"
+                        android:src="@drawable/payment"
+                        app:carbon_tint="@color/white" />
+
+                </carbon.widget.LinearLayout>
+
+
+            </carbon.widget.LinearLayout>
+
+            <carbon.widget.LinearLayout
+                android:id="@+id/deleteBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                app:carbon_cornerRadius="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:text="Delete Account"
+                    android:textColor="@color/carbon_red_600"
+                    android:textSize="@dimen/sb_head_textSize" />
+
+                <carbon.widget.ImageView
+                    android:layout_width="@dimen/_32sdp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/delete" />
+
+            </carbon.widget.LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

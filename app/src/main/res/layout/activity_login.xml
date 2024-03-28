@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/manrope_bold"
+        android:text="@string/login"
+        android:textAllCaps="true"
+        android:textColor="@color/lavender"
+        android:textSize="40sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:hint="Email"
+        app:hintTextColor="@color/lavender"
+        app:boxStrokeColor="@color/lavender"
+        app:placeholderText="Enter Email"
+        app:placeholderTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailEdtTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/sub_head_textSize" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:hint="Password"
+        app:hintTextColor="@color/lavender"
+        app:boxStrokeColor="@color/lavender"
+        app:placeholderText="Enter Password"
+        app:placeholderTextColor="@color/black"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordEdtTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/sub_head_textSize" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <carbon.widget.Button
+        android:id="@+id/loginBtn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@color/secondaryColor"
+        app:carbon_elevation="8dp"
+        android:fontFamily="@font/manrope_bold"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sub_head_textSize"
+        app:carbon_cornerRadius="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.55"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:fontFamily="@font/manrope_semibold"
+            android:text="Already Registered?"
+            android:textColor="#6D7277"
+            android:textSize="@dimen/small_head_textSize" />
+        <TextView
+            android:id="@+id/registerBtn"
+            android:layout_width="0dp"
+            android:layout_weight="0.45"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:fontFamily="@font/manrope_semibold"
+            android:text="Register"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sub_head_textSize" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Maktab</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="login">Login</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="student_details">Student Details</string>
+    <string name="num_char">00</string>
+    <string name="update_student_details">Update Student Details</string>
+    <string name="nooraniquida_deeniyat">NooraniQuida + Deeniyat</string>
+    <string name="quran_deeniyat">Quran + Deeniyat</string>
+    <string name="no_students_yet">No Students Yet!</string>
+    <string name="address">Near Masjid E Noor, NRR Puram Colony, Site 3, Borabanda, Hyderabad.</string>
+
+    <dimen name="heading_textSize">@dimen/_16ssp</dimen>
+    <dimen name="sub_head_textSize">@dimen/_14ssp</dimen>
+    <dimen name="sb_head_textSize">@dimen/_13ssp</dimen>
+    <dimen name="small_head_textSize">@dimen/_12ssp</dimen>
+
+
+    <string-array name="installments_options">
+        <item>1 month</item>
+        <item>2 month</item>
+        <item>3 months</item>
+        <item>6 months</item>
+        <item>Yearly</item>
+    </string-array>
+
+    <!--    <string name="upcoming_payments"><u><b>Upcoming Payments</b></u></string>-->
+    <string name="upcoming_payments">Upcoming Payments</string>
+    <string name="due_payments">Due Payments</string>
+
+
+</resources>

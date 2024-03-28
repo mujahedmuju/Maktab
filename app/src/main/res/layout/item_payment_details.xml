@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carbon.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="15dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginBottom="15dp"
+    android:background="@color/white"
+    app:carbon_cornerRadius="10dp"
+    app:carbon_elevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:text="Paid Date"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_head_textSize"
+            android:maxLines="1"/>
+        <TextView
+            android:id="@+id/tvPaidDate"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:text=":   12-12-2023"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_head_textSize"
+            android:maxLines="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:text="Total Amount Paid"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_head_textSize"
+            android:maxLines="1"/>
+        <TextView
+            android:id="@+id/tvTotalAmountPaid"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:text=":   ₹ 500"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_head_textSize"
+            android:maxLines="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:text="Balance Amount"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_head_textSize"
+            android:maxLines="1"/>
+        <TextView
+            android:id="@+id/tvBalanceAmount"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:text=":   ₹ 200"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_head_textSize"
+            android:maxLines="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:text="Due Date"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_head_textSize"
+            android:maxLines="1"/>
+        <TextView
+            android:id="@+id/tvDueDate"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_semibold"
+            android:text=":   12-01-2024"
+            android:textColor="@color/carbon_red_400"
+            android:textSize="@dimen/small_head_textSize"
+            android:maxLines="1"/>
+
+    </LinearLayout>
+
+    <carbon.widget.TextView
+        android:visibility="gone"
+        android:id="@+id/remarksTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remarks : "
+        android:textSize="@dimen/small_head_textSize"
+        android:fontFamily="@font/manrope_regular"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:textColor="@color/black"/>
+
+
+</carbon.widget.LinearLayout>
