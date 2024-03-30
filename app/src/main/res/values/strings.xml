@@ -19,7 +19,7 @@
 
     <string-array name="installments_options">
         <item>1 month</item>
-        <item>2 month</item>
+        <item>2 months</item>
         <item>3 months</item>
         <item>6 months</item>
         <item>Yearly</item>

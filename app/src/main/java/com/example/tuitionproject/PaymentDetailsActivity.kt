@@ -144,7 +144,7 @@ class PaymentDetailsActivity : AppCompatActivity() {
 
         addPayment(studentId.toString(), paymentData)
             .addOnSuccessListener { documentReference ->
-                // Update student document in Firestore with new payment due date
+                // Update student document in Fire store with new payment due date
                 val studentDocumentRef = studentId?.let { db.collection("Students").document(it) }
                 studentDocumentRef?.update("paymentDueDate", calculatedDueDate)
                     ?.addOnSuccessListener {
